@@ -49,7 +49,7 @@ public class GuessClass {
                 default:
                   //  System.out.println ("default running" );
                     numOfGuess++;
-                    guessLeft--;
+                    guessLeft--;// sssssssss
 
                     switch (guessLeft){
 
