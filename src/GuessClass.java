@@ -20,7 +20,7 @@ public class GuessClass {
                     System.out.println ("Верно !" + "");
                     System.out.println ("wanna game? Y/N" );
                     String s2 = scanner.nextLine ();
-                    System.out.println (s2 );
+
                     if (s2.equals ("y")){                      //if (s2=="y") not work
                         System.out.println ("играем снова" );  //обнулить счетчики hh
                         guess ();
@@ -47,7 +47,7 @@ public class GuessClass {
                     break;
 
                 default:
-                    System.out.println ("default running" );
+                  //  System.out.println ("default running" );
                     numOfGuess++;
                     guessLeft--;
 
@@ -55,6 +55,7 @@ public class GuessClass {
 
                         case 2:
                             System.out.println ("не угадал/ попробуй снова," +" " + guessLeft+"попытки осталось" );
+                          //  System.out.println ("не угадал/ попробуй снова," +" " + (3-numOfGuess)+ "Try lef");
                             break;
                         case 1:
                             System.out.println ("не угадал/ попробуй снова," +" " + guessLeft+"попытка осталась");
